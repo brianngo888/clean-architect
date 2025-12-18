@@ -1,16 +1,18 @@
 Cấu trúc thư mục (Clean/Hexagonal)
 
-com.example.payment
- ├─ domain
- │   ├─ model
- │   └─ port
- ├─ application
- │   ├─ usecase
- │   └─ dto
- ├─ adapter
- │   ├─ in
- │   │   └─ web
- │   └─ out
- │       ├─ db
- │       └─ http
- └─ bootstrap
+src/main/java/com/example/load
+├── LoadApplication.java
+├── bootstrap
+│   └── LoadConfig.java
+├── domain
+│   └── LoadResult.java
+├── application
+│   └── usecase
+│       ├── PingUseCase.java
+│       └── CpuLoadUseCase.java
+└── adapters
+    └── in
+        └── web
+            ├── LoadController.java
+            └── LoadResponse.java
+
