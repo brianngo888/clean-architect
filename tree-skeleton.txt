@@ -1,0 +1,16 @@
+Cấu trúc thư mục (Clean/Hexagonal)
+
+com.example.payment
+ ├─ domain
+ │   ├─ model
+ │   └─ port
+ ├─ application
+ │   ├─ usecase
+ │   └─ dto
+ ├─ adapter
+ │   ├─ in
+ │   │   └─ web
+ │   └─ out
+ │       ├─ db
+ │       └─ http
+ └─ bootstrap
