@@ -1,7 +1,7 @@
-package com.ngocnq2.payment.application.usecase;
+package com.ngocnq2.highthroughput.application.usecase;
 
-import com.ngocnq2.payment.domain.model.Payment;
-import com.ngocnq2.payment.domain.ports.PaymentRepositoryPort;
+import com.ngocnq2.highthroughput.domain.model.Payment;
+import com.ngocnq2.highthroughput.domain.port.PaymentRepositoryPort;
 import reactor.core.publisher.Mono;
 
 import java.math.BigDecimal;

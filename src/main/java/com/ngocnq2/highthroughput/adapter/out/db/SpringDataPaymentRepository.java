@@ -1,4 +1,4 @@
-package com.ngocnq2.payment.adapter.out.db;
+package com.ngocnq2.highthroughput.adapter.out.db;
 
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 

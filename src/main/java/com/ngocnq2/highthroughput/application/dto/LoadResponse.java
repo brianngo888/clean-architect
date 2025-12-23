@@ -1,4 +1,4 @@
-package main.java.com.ngocnq2.highthroughput.application.dto;
+package com.ngocnq2.highthroughput.application.dto;
 
 /**
  * Web response DTO.

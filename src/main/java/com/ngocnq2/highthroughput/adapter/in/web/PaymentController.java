@@ -1,6 +1,6 @@
-package com.ngocnq2.payment.adapter.in.web;
+package com.ngocnq2.highthroughput.adapter.in.web;
 
-import com.example.payment.application.usecase.CreatePaymentUseCase;
+import com.ngocnq2.highthroughput.application.usecase.CreatePaymentUseCase;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

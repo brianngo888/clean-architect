@@ -1,7 +1,7 @@
-package com.ngocnq2.payment.adapter.out.db;
+package com.ngocnq2.highthroughput.adapter.out.db;
 
-import com.ngocnq2.payment.domain.model.Payment;
-import com.ngocnq2.payment.domain.port.PaymentRepositoryPort;
+import com.ngocnq2.highthroughput.domain.model.Payment;
+import com.ngocnq2.highthroughput.domain.port.PaymentRepositoryPort;
 import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Mono;
 

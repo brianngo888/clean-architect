@@ -1,7 +1,7 @@
-package com.ngocnq2.payment.bootstrap;
+package com.ngocnq2.highthroughput.bootstrap;
 
-import com.ngocnq2.payment.application.usecase.CreatePaymentUseCase;
-import com.ngocnq2.payment.domain.ports.PaymentRepositoryPort;
+import com.ngocnq2.highthroughput.application.usecase.CreatePaymentUseCase;
+import com.ngocnq2.highthroughput.domain.port.PaymentRepositoryPort;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

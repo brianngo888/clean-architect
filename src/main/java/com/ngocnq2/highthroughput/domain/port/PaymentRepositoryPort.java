@@ -1,6 +1,6 @@
-package com.ngocnq2.payment.domain.ports;
+package com.ngocnq2.highthroughput.domain.port;
 
-import com.ngocnq2.payment.domain.model.Payment;
+import com.ngocnq2.highthroughput.domain.model.Payment;
 import reactor.core.publisher.Mono;
 
 import java.util.UUID;

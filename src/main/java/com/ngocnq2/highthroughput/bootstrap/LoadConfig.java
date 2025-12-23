@@ -1,5 +1,6 @@
 package com.ngocnq2.highthroughput.bootstrap;
 
+import com.ngocnq2.highthroughput.application.usecase.CpuLoadUseCase;
 import com.ngocnq2.highthroughput.application.usecase.PingUseCase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 public class LoadConfig {
 
   @Bean
-  main.java.com.ngocnq2.highthroughput.application.usecase.PingUseCase pingUseCase() {
+  PingUseCase pingUseCase() {
     return new PingUseCase();
   }
 

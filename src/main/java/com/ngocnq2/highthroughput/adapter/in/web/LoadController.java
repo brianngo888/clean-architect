@@ -1,7 +1,9 @@
-package main.java.com.ngocnq2.highthroughput.adapter.in.web;
+package com.ngocnq2.highthroughput.adapter.in.web;
 
-import com.example.load.application.usecase.CpuLoadUseCase;
-import com.example.load.application.usecase.PingUseCase;
+
+import com.ngocnq2.highthroughput.application.dto.LoadResponse;
+import com.ngocnq2.highthroughput.application.usecase.CpuLoadUseCase;
+import com.ngocnq2.highthroughput.application.usecase.PingUseCase;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 

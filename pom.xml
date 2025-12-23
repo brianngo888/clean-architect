@@ -19,14 +19,13 @@
 
     <properties>
         <java.version>21</java.version>
+
+        <!-- Use Cloud 2023.x with Boot 3.3.x -->
         <spring-cloud.version>2023.0.6</spring-cloud.version>
 
-        <!-- choose ONE line -->
+        <!-- Pick one -->
         <testcontainers.version>1.21.4</testcontainers.version>
         <!-- <testcontainers.version>2.0.3</testcontainers.version> -->
-
-        <!-- R2DBC train (pins r2dbc-postgresql version) -->
-        <r2dbc.bom.version>Arabba-SR18</r2dbc.bom.version>
     </properties>
 
     <dependencyManagement>
@@ -72,30 +71,37 @@
             <artifactId>micrometer-registry-prometheus</artifactId>
         </dependency>
 
-        <!-- Tracing -->
+        <!-- Tracing bridge -->
         <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-tracing-bridge-otel</artifactId>
         </dependency>
-        <!-- optional: only if you really export OTLP yourself; otherwise you can omit -->
+
+        <!-- If you actually export OTLP yourself, keep this; otherwise you can remove -->
         <dependency>
             <groupId>io.opentelemetry</groupId>
             <artifactId>opentelemetry-exporter-otlp</artifactId>
         </dependency>
 
-        <!-- Resilience4j circuit breaker -->
+        <!-- Resilience4j -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-circuitbreaker-reactor-resilience4j</artifactId>
         </dependency>
 
-        <!-- R2DBC Postgres -->
+        <!-- R2DBC -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-r2dbc</artifactId>
         </dependency>
 
-        <!-- Flyway (needs JDBC) -->
+        <!-- ✅ Correct Postgres R2DBC driver -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>r2dbc-postgresql</artifactId>
+        </dependency>
+
+        <!-- Flyway needs JDBC -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>

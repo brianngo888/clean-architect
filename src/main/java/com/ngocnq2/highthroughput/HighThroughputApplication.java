@@ -1,4 +1,8 @@
-package main.java.com.ngocnq2.highthroughput;
+package com.ngocnq2.highthroughput;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class HighThroughputApplication {

@@ -1,4 +1,4 @@
-package com.ngocnq2.payment.domain.model;
+package com.ngocnq2.highthroughput.domain.model;
 
 import java.math.BigDecimal;
 import java.time.Instant;

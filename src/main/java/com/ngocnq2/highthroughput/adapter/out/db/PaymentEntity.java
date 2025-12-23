@@ -1,5 +1,5 @@
 
-package com.ngocnq2.payment.adapter.out.db;
+package com.ngocnq2.highthroughput.adapter.out.db;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
