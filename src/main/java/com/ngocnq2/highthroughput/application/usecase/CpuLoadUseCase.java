@@ -1,5 +1,6 @@
 package com.ngocnq2.highthroughput.application.usecase;
 
+import com.ngocnq2.highthroughput.domain.LoadResult;
 import reactor.core.publisher.Mono;
 
 /**
