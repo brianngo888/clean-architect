@@ -1,4 +1,4 @@
-package com.ngocnq2.payment.adapter.in.web;
+package com.ngocnq2.highthroughput.adapter.in.web;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

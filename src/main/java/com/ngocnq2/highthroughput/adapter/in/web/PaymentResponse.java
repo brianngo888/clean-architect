@@ -1,4 +1,4 @@
-package com.ngocnq2.payment.adapter.in.web;
+package com.ngocnq2.highthroughput.adapter.in.web;
 
 import java.math.BigDecimal;
 import java.time.Instant;

@@ -1,7 +1,7 @@
 package main.java.com.ngocnq2.highthroughput.application.usecase;
 
 
-import com.example.load.domain.LoadResult;
+import com.ngocnq2.highthroughput.;
 import reactor.core.publisher.Mono;
 
 /**
