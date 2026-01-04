@@ -1,11 +1,9 @@
-version: "3.9"
-
-name: pg-stack
+name: high-throughput-system
 
 services:
   postgres:
     image: postgres:16
-    container_name: pg
+    container_name: postgresql
     environment:
       POSTGRES_DB: appdb
       POSTGRES_USER: app
@@ -37,28 +35,13 @@ services:
       - "log_statement=none"
     restart: unless-stopped
 
-  pgadmin:
-    image: dpage/pgadmin4:8
-    container_name: pgadmin
-    environment:
-      PGADMIN_DEFAULT_EMAIL: admin@example.com
-      PGADMIN_DEFAULT_PASSWORD: admin_password_change_me
-      PGADMIN_CONFIG_SERVER_MODE: "False"
-    ports:
-      - "8080:80"
-    depends_on:
-      postgres:
-        condition: service_healthy
-    volumes:
-      - pgadmin_data:/var/lib/pgadmin
-    restart: unless-stopped
-
   # Optional but useful when you have many app connections
   pgbouncer:
     image: pgbouncer/pgbouncer:latest
+    platform: linux/amd64
     container_name: pgbouncer
     environment:
-      DATABASE_URL: "postgres://app:app_password_change_me@postgres:5432/appdb"
+      DATABASES_HOST: "postgresql://app:app_password_change_me@postgres:5432/appdb"
       POOL_MODE: transaction
       MAX_CLIENT_CONN: 500
       DEFAULT_POOL_SIZE: 50
