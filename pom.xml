@@ -12,10 +12,10 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.example</groupId>
-    <artifactId>clean-architect</artifactId>
+    <groupId>com.ngocnq2</groupId>
+    <artifactId>high-throughput-architect</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>clean-architect</name>
+    <name>high-throughput-architect</name>
 
     <properties>
         <java.version>21</java.version>

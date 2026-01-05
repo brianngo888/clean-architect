@@ -1,4 +1,4 @@
-package com.ngocnq2.payment.adapters.out.http;
+package com.ngocnq2.highthroughput.adapter.out.http;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.springframework.stereotype.Component;
